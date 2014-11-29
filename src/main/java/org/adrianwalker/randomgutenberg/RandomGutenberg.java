@@ -21,7 +21,7 @@ public final class RandomGutenberg {
 
   private static final int GUTTENBERG_BOOK_COUNT = 47373;
   private static final String GUTTENBERG_BOOK_URL = "http://www.gutenberg.org/files/%s/%s.txt";
-  private static final String SENTANCE_ENDINGS_REGEX = "(?<=[.!?])";
+  private static final String SENTANCE_ENDINGS_REGEX = "(?<=\\s?\"?[.!?]\"?\\s?)";
   private static final String WORD_ENDINGS_REGEX = "\\s";
   private static final Pattern SENTENCE_ENDINGS_PATTERN = Pattern.compile(SENTANCE_ENDINGS_REGEX);
   private static final Pattern WORD_ENDINGS_PATTERN = Pattern.compile(WORD_ENDINGS_REGEX);
